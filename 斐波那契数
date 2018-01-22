@@ -1,0 +1,8 @@
+def fab(max):   #斐波那契数   
+n, a, b = 0, 0, 1 
+while n < max:      
+yield b         # 把printb 替换下来，带有yield的函数就是生成器       
+a, b = b, a + b        
+n = n + 1         # n代表数列的多少
+for n in fab(5):  #调用fab(5)不会执行fab函数，而是返回一个iterable迭代对象   
+print(n)
