@@ -1,0 +1,3 @@
+def str2float(s):
+    L = s.split('.');   #
+    return reduce(lambda x,y : y+x10, map(int, L[0])) + reduce(lambda x,y : y+x10, map(int, L[1]))*pow(10, -len(L[1]))
