@@ -1,13 +1,19 @@
-from io import StringIO
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-f = StringIO()
+from datetime import datetime
 
-f.write('Hello')
+with open('test.txt', 'w') as f:
+    f.write('今天是 ')
+    f.write(datetime.now().strftime('%Y-%m-%d'))
 
-print(f.tell())
+with open('test.txt', 'r') as f:
+    s = f.read()
+    print('open for read...')
+    print(s)
 
-f.seek(2)    # 0表示从当前位置计算指针的偏移 1，结果5 ello,2结果5 llo
+with open('test.txt', 'rb') as f:  #以二进制方式读文件
+    s = f.read()
+    print('open as binary for read...')
+    print(s)
 
-s = f.readline()
-
-print(s)
