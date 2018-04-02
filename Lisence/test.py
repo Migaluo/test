@@ -1,19 +1,12 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 
-from datetime import datetime
+import time           # 计算某天是当年第几天
+try:
 
-with open('test.txt', 'w') as f:
-    f.write('今天是 ')
-    f.write(datetime.now().strftime('%Y-%m-%d'))
-
-with open('test.txt', 'r') as f:
-    s = f.read()
-    print('open for read...')
-    print(s)
-
-with open('test.txt', 'rb') as f:  #以二进制方式读文件
-    s = f.read()
-    print('open as binary for read...')
-    print(s)
-
+   date = input('请输入日期：')
+   t = time.strptime(date, '%Y-%m-%d')
+   print(time.strftime('%j',t))
+except:
+    print('输入的格式错误，请重新输入!')
+    exit()
