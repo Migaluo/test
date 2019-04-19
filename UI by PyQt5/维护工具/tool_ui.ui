@@ -1,0 +1,850 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>752</width>
+    <height>530</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tool</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">rgb(127, 134, 129)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="font">
+         <font>
+          <family>宋体</family>
+          <pointsize>12</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 12pt &quot;宋体&quot;;</string>
+        </property>
+        <property name="currentIndex">
+         <number>1</number>
+        </property>
+        <widget class="QWidget" name="tab2">
+         <attribute name="title">
+          <string>程序部署</string>
+         </attribute>
+         <widget class="QTextEdit" name="textEdit_send">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>100</y>
+            <width>371</width>
+            <height>251</height>
+           </rect>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'宋体'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QTextBrowser" name="textBrowser_recv">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>130</y>
+            <width>256</width>
+            <height>192</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="btnsend">
+          <property name="geometry">
+           <rect>
+            <x>180</x>
+            <y>360</y>
+            <width>75</width>
+            <height>25</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <family>Agency FB</family>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 10pt &quot;Agency FB&quot;;</string>
+          </property>
+          <property name="text">
+           <string>发送</string>
+          </property>
+         </widget>
+         <widget class="QWidget" name="layoutWidget">
+          <property name="geometry">
+           <rect>
+            <x>50</x>
+            <y>30</y>
+            <width>320</width>
+            <height>27</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QPushButton" name="btnopen">
+             <property name="font">
+              <font>
+               <family>Agency FB</family>
+               <pointsize>10</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">font: 10pt &quot;Agency FB&quot;;</string>
+             </property>
+             <property name="text">
+              <string>打开</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnsetup">
+             <property name="text">
+              <string>一键部署</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btnupload">
+             <property name="text">
+              <string>上传</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btndownload">
+             <property name="text">
+              <string>下载</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+        <widget class="QWidget" name="tab1">
+         <attribute name="title">
+          <string>维护管理</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="IPlabel">
+              <property name="text">
+               <string>目标IP</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="IPlineEdit">
+              <property name="text">
+               <string>172.30.32.129</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QPushButton" name="dockerstatsbtn">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+              </property>
+              <property name="text">
+               <string>容器状态</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="adjusttimebtn">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+              </property>
+              <property name="text">
+               <string>终端对时</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="rebootbtn">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+              </property>
+              <property name="text">
+               <string>容器复位</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0" colspan="2">
+           <widget class="QTextBrowser" name="textBrowser_docker"/>
+          </item>
+          <item row="2" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>终端参数</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="setbtn_2">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+              </property>
+              <property name="text">
+               <string>上行通讯参数</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>测量点参数</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="setbtn_1">
+              <property name="styleSheet">
+               <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+              </property>
+              <property name="text">
+               <string>测量点通讯参数</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab0">
+         <attribute name="title">
+          <string>数据查询</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="0" column="0">
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="startlabel">
+              <property name="font">
+               <font>
+                <family>Agency FB</family>
+                <pointsize>9</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 7pt &quot;Agency FB&quot;;
+font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>起始测量点</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_2">
+              <item>
+               <property name="text">
+                <string>0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>30</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>31</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>32</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>33</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>34</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>35</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>36</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>37</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>38</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>39</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>40</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>41</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>42</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>43</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="endlabel">
+              <property name="font">
+               <font>
+                <family>Agency FB</family>
+                <pointsize>9</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font: 7pt &quot;Agency FB&quot;;
+font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>结束测量点</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox">
+              <item>
+               <property name="text">
+                <string>0</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>30</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>31</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>32</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>33</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>34</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>35</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>36</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>37</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>38</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>39</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>40</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>41</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>42</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>43</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="1" colspan="2">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="para">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>测量点参数选择</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_stats">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>8900 测量点状态</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_nature">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>8901 测量点性质</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_adr">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>8902 测量点地址</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_MAC">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>8906 本地网络访问地址</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_father">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>8907 父节点地址</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_IP">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>890A SIM卡IP地址</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_CT">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>8911 测量点CT变比</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_num">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>890B SIM卡手机号</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="0" column="3" rowspan="2" colspan="2">
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="data">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>测量点数据选择</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_B611">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>B611 A相电压</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_B612">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>B612 B相电压</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_B613">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>B613 C相电压</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_B621">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>B621 A相电流</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_B622">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>B622 B相电流</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_B623">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>B623 C相电流</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_8E21">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>8E21 A相电流(一次侧)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_8E22">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>8E22 B相电流(一次侧)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_8E23">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>8E23 C相电流(一次侧)</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_D520">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>D520 变压器油温</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_D521">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>D521 环境温度</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_D525">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>D525 环境湿度</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_D528">
+              <property name="styleSheet">
+               <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+              </property>
+              <property name="text">
+               <string>D528 变压器箱内温度</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0" rowspan="2">
+           <widget class="QTextBrowser" name="textBrowser_query">
+            <property name="html">
+             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'宋体'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="query_btn">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>10</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt &quot;Agency FB&quot;;</string>
+            </property>
+            <property name="text">
+             <string>查询</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="Abtn">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>10</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt &quot;Agency FB&quot;;</string>
+            </property>
+            <property name="text">
+             <string>A相电压</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="3">
+           <widget class="QPushButton" name="humbtn">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>10</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt &quot;Agency FB&quot;;</string>
+            </property>
+            <property name="text">
+             <string>环境湿度</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="4">
+           <widget class="QPushButton" name="tempbtn">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>10</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt &quot;Agency FB&quot;;</string>
+            </property>
+            <property name="text">
+             <string>环境温度</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="5">
+           <widget class="QPushButton" name="ipbtn">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>10</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt &quot;Agency FB&quot;;</string>
+            </property>
+            <property name="text">
+             <string>测量点IP</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+         <zorder>query_btn</zorder>
+         <zorder>Abtn</zorder>
+         <zorder>humbtn</zorder>
+         <zorder>tempbtn</zorder>
+         <zorder>ipbtn</zorder>
+         <zorder>textBrowser_query</zorder>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>752</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionopen"/>
+   </widget>
+   <addaction name="menu"/>
+  </widget>
+  <action name="actionopen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="D:/Tool/git/Git/PyQt5/Chapter03/apprcc.qrc"/>
+ </resources>
+ <connections/>
+ <slots>
+  <slot>slot1()</slot>
+ </slots>
+</ui>
