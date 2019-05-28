@@ -1,0 +1,809 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>832</width>
+    <height>362</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Agency FB</family>
+    <pointsize>7</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>Tool</string>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="font">
+       <font>
+        <family>宋体</family>
+        <pointsize>10</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="tab0">
+       <attribute name="title">
+        <string>数据查询</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="QPushButton" name="btnquery">
+          <property name="font">
+           <font>
+            <family>Agency FB</family>
+            <pointsize>9</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font: 9pt &quot;Agency FB&quot;;</string>
+          </property>
+          <property name="text">
+           <string>查询</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="startlabel">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>8</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 8pt &quot;Agency FB&quot;;
+</string>
+            </property>
+            <property name="text">
+             <string>起始测量点</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_satrt">
+            <property name="styleSheet">
+             <string notr="true">font: 8pt &quot;Agency FB&quot;;</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>0</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>30</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>31</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>32</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>33</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>34</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>35</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>36</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>37</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>38</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>39</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>40</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>41</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>42</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>43</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="endlabel">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>8</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 8pt &quot;Agency FB&quot;;</string>
+            </property>
+            <property name="text">
+             <string>结束测量点</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_end">
+            <property name="styleSheet">
+             <string notr="true">font: 8pt &quot;Agency FB&quot;;</string>
+            </property>
+            <item>
+             <property name="text">
+              <string>0</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>30</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>31</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>32</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>33</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>34</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>35</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>36</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>37</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>38</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>39</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>40</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>41</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>42</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>43</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <widget class="QListWidget" name="listWidget">
+          <item>
+           <property name="text">
+            <string>8900测量点状态</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8901测量点性质</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8902测量点地址</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8906本地网络访问地址</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8907父节点地址</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8911测量点CT变比</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>B611A相电压</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>B612B相电压</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>B613C相电压</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>B621A相电流</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>B622B相电流</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>B623C相电流</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8E21A相电流(一次侧)</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8E22B相电流(一次侧)</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>8E23C相电流(一次侧)</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D520变压器油温</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D521环境温度</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D525环境湿度</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D528变压器箱内温度</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>890B SIM卡手机号</string>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
+           <property name="checkState">
+            <enum>Unchecked</enum>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QTextEdit" name="textEdit_query"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab2">
+       <attribute name="title">
+        <string>程序部署</string>
+       </attribute>
+       <layout class="QFormLayout" name="formLayout">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QPushButton" name="btnUpload">
+            <property name="text">
+             <string>导入U盘文件</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnopen">
+            <property name="font">
+             <font>
+              <family>Agency FB</family>
+              <pointsize>10</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">font: 10pt &quot;Agency FB&quot;;</string>
+            </property>
+            <property name="text">
+             <string>打开文件</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnLs">
+            <property name="styleSheet">
+             <string notr="true">font: 8pt &quot;宋体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>ls -l</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnSetup">
+            <property name="text">
+             <string>一键部署</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnDownload">
+            <property name="text">
+             <string>下载日志</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <widget class="QTextEdit" name="textEdit_file"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab1">
+       <attribute name="title">
+        <string>维护管理</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="3" column="1">
+         <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true">font: 8pt &quot;Agency FB&quot;;</string>
+          </property>
+          <property name="text">
+           <string>测量点参数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0" rowspan="5">
+         <widget class="QTextBrowser" name="textBrowser_cmd"/>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">font: 8pt &quot;Agency FB&quot;;</string>
+          </property>
+          <property name="text">
+           <string>终端参数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QPushButton" name="setbtn">
+          <property name="styleSheet">
+           <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>上行通讯参数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="1">
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>17</width>
+            <height>168</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="1">
+         <widget class="QPushButton" name="setbtn_1">
+          <property name="styleSheet">
+           <string notr="true">font: 10pt &quot;宋体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>测量点通讯参数</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QPushButton" name="btnIP">
+            <property name="styleSheet">
+             <string notr="true">font: 8pt &quot;宋体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>ifconfig</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btn_dockerStats">
+            <property name="styleSheet">
+             <string notr="true">font: 8pt &quot;宋体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>docker ps</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnReboot">
+            <property name="styleSheet">
+             <string notr="true">font: 8pt &quot;宋体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>Reboot</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnPsa">
+            <property name="styleSheet">
+             <string notr="true">font: 8pt &quot;宋体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>psa</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnPsa1">
+            <property name="styleSheet">
+             <string notr="true">font: 8pt &quot;宋体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>display_psa</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnTime">
+            <property name="styleSheet">
+             <string notr="true">font: 8pt &quot;宋体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>终端对时1</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnTime1">
+            <property name="styleSheet">
+             <string notr="true">font: 8pt &quot;宋体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>终端对时2</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="IPlabel">
+            <property name="text">
+             <string>IP</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="IPlineEdit">
+            <property name="styleSheet">
+             <string notr="true">font: 8pt &quot;Agency FB&quot;;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionopen">
+   <property name="text">
+    <string>Open</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>btnopen</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>open()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>339</x>
+     <y>56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>128</x>
+     <y>1</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>open()</slot>
+  <slot>all_set()</slot>
+  <slot>upload()</slot>
+  <slot>download()</slot>
+  <slot>send()</slot>
+  <slot>dockerStats()</slot>
+  <slot>adjustTime()</slot>
+  <slot>reboot()</slot>
+  <slot>queryIP()</slot>
+  <slot>querydata()</slot>
+ </slots>
+</ui>
